@@ -1,0 +1,91 @@
+@charset 'UTF-8';    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+footer
+{
+  height:100px;
+  background-color: #FF8000
+}
+
+.tokyophoto{
+  background-image: url("../images/tokyo.jpg");
+  height: 250px; /*250pxにするとスマホサイトでは250になるのではないでしょうか？ */
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+  
+.text-center{
+ text-align: center;
+}
+  
+.sono123 {
+  display: flex;
+  flex-direction: row;
+}
+
+.box1,
+.box2,
+.box3 {
+  border: solid 1px skyblue;
+  margin: 10px;
+  flex: 1;
+  background-color: #bcc6ff;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top:0;
+    padding: 1em;
+    background-color: #152891;
+}
+p {
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-top: 0px;
+    padding: 1em;
+    background-color: #000000;
+}
+
+
+.kadomaru-button {
+    margin : auto ;
+    padding : 20px;
+    background-color: #99CC33;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) {
+.tokyophoto{
+  background-image: url("../images/tokyo.jpg");
+  height: 500px; 
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
